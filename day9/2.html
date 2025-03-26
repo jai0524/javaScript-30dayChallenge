@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change background-color</title>
+    <style>
+        .bgColor{
+            border: 2px solid rgb(0, 0, 0);
+            background-color: lightgray;
+            
+        }
+    </style>
+ </head>
+ <body>
+    <p class="bgColor">this is a word</p>
+    <button onclick="color()">change Color</button>
+<script>
+    function color(){
+        let Change = document.getElementsByClassName('bgColor')
+        for(let i=0;i<Change.length;i++){
+            Change[i].style.backgroundColor='red';
+        }
+    }
+</script>
+ </body>
+ </html>

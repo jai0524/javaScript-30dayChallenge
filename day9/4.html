@@ -1,0 +1,29 @@
+
+ <!-- task 4: ex naya li element banao aur use  existing ul list me add karo -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <ul id="mylist">
+        <li>bat</li>
+        <li>cat</li>
+        <li>rat</li>
+    </ul>
+
+    <button onclick="addListItem()">addList</button>
+    <script>
+        function addListItem(){
+            let list = document.getElementById('mylist');
+            let newlist = document.createElement('li');
+            newlist.textContent = 'new list item';
+
+            list.appendChild(newlist);
+        }
+        
+
+    </script>
+</body>
+</html> 
