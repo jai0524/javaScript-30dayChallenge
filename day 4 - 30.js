@@ -185,108 +185,222 @@
                                             //  day 6
 
 
-// // Activity : Array
+// Activity : Array
+// task 1
+
+var a =[1,2,3,4,5];
+for(i=0;i<=a.length-1;i++)
+console.log(a[i]);
+
+// task 2
+
+var a=[1,2,3,4,5];
+    console.log(a[0],a[4])
+
+// task 3
+
+var a=[1,2,3,4,5];
+console.log(a);
+a.push(6);
+for (let i = 0; i < a.length; i++) {
+    console.log(a[i]);
+    
+}
+
+// task 4
+
+var a=[1,2,3,4,5]
+console.log(a);
+a.pop(5)
+for(i=0;i<=a.length;i++){
+    console.log(a[i])
+}
+
+// task 5
+
+var a=[1,2,3,4,5]
+console.log(a);
+a.shift(1)
+for(i=0;i<=a.length;i++){
+    console.log(a[i])
+}
+
+// task 6
+
+var a=[2,3,4,5];
+console.log(a);
+a.unshift(1)
+for(i=0;i<=a.length;i++){
+    console.log(a[i])
+}
+
+// task 7
+var a=[1,2,3,4,5]
+console.log(a)
+let double =a.map(a=>a*2 )
+console.log(double);
+
+// task 8
+
+var a =[1,2,3,4,5];
+console.log(a);
+let filter=a.filter(a=>a%2==0)
+console.log(filter);
+
+// task 9
+
+var a=[1,2,3,4,5];
+let reduce =a.reduce(a=> a +=a)
+console.log(reduce);
+
+// task 10
+
+var x=[1,2,3,4,5];
+for(let value of x){
+    console.log(`values are ${value}`)
+}
+
+// task 11
+
+var x=[1,2,3,4,5]
+ x.forEach((value ) => {
+    console.log(`x values are  ${value}`);
+
+}); 
+
+// task 12
+
+var matrix =[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+for(i=0;i<=matrix.length-1;i++){
+console.log(matrix[i]);}
+
+// task 13
+
+var matrix =[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+console.log(matrix[1]);
+
+//                                         // day 7
+// // Activity : Object                                        
 // // task 1
 
-// var a =[1,2,3,4,5];
-// for(i=0;i<=a.length-1;i++)
-// console.log(a[i]);
+// var book={
+//     title:"DSA",
+//     author:"Armstrong-Subero",
+//     year:2020
+// }
+// console.log(book);
 
 // // task 2
 
-// var a=[1,2,3,4,5];
-//     console.log(a[0],a[4])
+// var book={
+//     title:"DSA",
+//     author:"Armstrong-Subero",
+//     year:2020
+// }
+// console.log(book.author, book.title)
 
 // // task 3
 
-// var a=[1,2,3,4,5];
-// console.log(a);
-// a.push(6);
-// for (let i = 0; i < a.length; i++) {
-//     console.log(a[i]);
-    
+
+// var book={
+//     title:"DSA",
+//     author:"Armstrong-Subero",
+//     year:2020
 // }
 
-// // task 4
+//     console.log(typeof(book.author, book.title))
 
-// var a=[1,2,3,4,5]
-// console.log(a);
-// a.pop(5)
-// for(i=0;i<=a.length;i++){
-//     console.log(a[i])
-// }
+//     // task 4
+
+//     var book={
+//         title:"DSA",
+//         author:"Armstrong-Subero",
+//         year:2020
+//     }
+
+// book.year=2013;
+// console.log(book.year)    
 
 // // task 5
 
-// var a=[1,2,3,4,5]
-// console.log(a);
-// a.shift(1)
-// for(i=0;i<=a.length;i++){
-//     console.log(a[i])
+// var library={
+//     bookName: "data-structure",
+// book:{
+//     title:"DSA",
+//     author:"Armstrong-Subero",
+//     year:2020
 // }
+
+// }
+// console.log(library.bookName,library.book);
 
 // // task 6
 
-// var a=[2,3,4,5];
-// console.log(a);
-// a.unshift(1)
-// for(i=0;i<=a.length;i++){
-//     console.log(a[i])
+// var library={
+//     book:[
+//            { title:"CA",author:"Armstrong-Subero",year:2020},
+//            { title:"CN",author:"hello",year:2010},
+//             {title:"DS",author:"hi",year:2022},
+//             {title:"JAVA",author:"by",year:2003}
+        
+    
+// ]}
+// for(let book of library.book){
+//     console.log(book.title)
 // }
 
 // // task 7
-// var a=[1,2,3,4,5]
-// console.log(a)
-// let double =a.map(a=>a*2 )
-// console.log(double);
+// class Book{
+//     book(Bname,year){
+// this.Bname=Bname;
+// this.year=year;
+//     }
+// };
+// var book1 = new Book("ds", 2005);
+// var book2 = new Book("ca", 2015);
+// var book3 = new Book("cn", 2012);
+// var book4 = new Book("da", 2010);
+// var book5 = new Book("java", 2006);
+// var book6 = new Book("c", 2017);
+// var book7 = new Book("oop", 2005);
+// var book8 = new Book("py", 2015);
+// var book9 = new Book("math", 1995);
+// var book10 = new Book("evs", 1990);
+
+// var books = [book1, book2, book3, book4, book5, book6, book7, book8, book9, book10];
+// console.log(books.map(book => book.Bname));
 
 // // task 8
 
-// var a =[1,2,3,4,5];
-// console.log(a);
-// let filter=a.filter(a=>a%2==0)
-// console.log(filter);
-
-// // task 9
-
-// var a=[1,2,3,4,5];
-// let reduce =a.reduce(a=> a +=a)
-// console.log(reduce);
-
-// // task 10
-
-// var x=[1,2,3,4,5];
-// for(let value of x){
-//     console.log(`values are ${value}`)
+// class Books {
+//     constructor(Bname, year) {
+//         this.Bname = Bname;
+//         this.year = year;
+//     }
 // }
 
-// // task 11
+// var book1 = new Books("ds", 2005);
 
-// var x=[1,2,3,4,5]
-//  x.forEach((value ) => {
-//     console.log(`x values are  ${value}`);
+// for (let key in book1) {
+//     console.log(`${key}: ${book1[key]}`);
+// }
 
-// }); 
+// // task 9
+// class javaBook {
+//     constructor(Bname, year) {
+//         this.Bname = Bname;
+//         this.year = year;
+//     }
+// }
+// var book1 =new javaBook("java ", 2000);
+// console.log(Object.keys(book1));
+// console.log(Object.values(book1))
 
-// // task 12
-
-// var matrix =[
-//     [1,2,3],
-//     [4,5,6],
-//     [7,8,9]
-// ];
-// for(i=0;i<=matrix.length-1;i++){
-// console.log(matrix[i]);}
-
-// // task 13
-
-// var matrix =[
-//     [1,2,3],
-//     [4,5,6],
-//     [7,8,9]
-// ];
-// console.log(matrix[1]);
-
-                                        // day 7
-// Activity : Object                                        
-// task 1
