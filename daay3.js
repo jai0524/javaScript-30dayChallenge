@@ -105,13 +105,13 @@ switch(grade){
 }
 
 // task 6
-  z=15;
+  let z=15;
 let num = z%2==0 ? "z is even" : "z is odd";
 console.log(num)
 
 // task 7
 
-year =2025;
+ let year =2025;
 
 if (year%4==0){
   console.log("the year is leap year")
