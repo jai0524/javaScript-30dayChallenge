@@ -182,110 +182,110 @@
 // let sumNum = (squareNum,a)=> squareNum+a;
 // console.log(sumNum(squareNum(a),a))
 
-                                            //  day 6
+//                                             //  day 6
 
 
-// Activity : Array
-// task 1
+// // Activity : Array
+// // task 1
 
-var a =[1,2,3,4,5];
-for(i=0;i<=a.length-1;i++)
-console.log(a[i]);
+// var a =[1,2,3,4,5];
+// for(i=0;i<=a.length-1;i++)
+// console.log(a[i]);
 
-// task 2
+// // task 2
 
-var a=[1,2,3,4,5];
-    console.log(a[0],a[4])
+// var a=[1,2,3,4,5];
+//     console.log(a[0],a[4])
 
-// task 3
+// // task 3
 
-var a=[1,2,3,4,5];
-console.log(a);
-a.push(6);
-for (let i = 0; i < a.length; i++) {
-    console.log(a[i]);
+// var a=[1,2,3,4,5];
+// console.log(a);
+// a.push(6);
+// for (let i = 0; i < a.length; i++) {
+//     console.log(a[i]);
     
-}
+// }
 
-// task 4
+// // task 4
 
-var a=[1,2,3,4,5]
-console.log(a);
-a.pop(5)
-for(i=0;i<=a.length;i++){
-    console.log(a[i])
-}
+// var a=[1,2,3,4,5]
+// console.log(a);
+// a.pop(5)
+// for(i=0;i<=a.length;i++){
+//     console.log(a[i])
+// }
 
-// task 5
+// // task 5
 
-var a=[1,2,3,4,5]
-console.log(a);
-a.shift(1)
-for(i=0;i<=a.length;i++){
-    console.log(a[i])
-}
+// var a=[1,2,3,4,5]
+// console.log(a);
+// a.shift(1)
+// for(i=0;i<=a.length;i++){
+//     console.log(a[i])
+// }
 
-// task 6
+// // task 6
 
-var a=[2,3,4,5];
-console.log(a);
-a.unshift(1)
-for(i=0;i<=a.length;i++){
-    console.log(a[i])
-}
+// var a=[2,3,4,5];
+// console.log(a);
+// a.unshift(1)
+// for(i=0;i<=a.length;i++){
+//     console.log(a[i])
+// }
 
-// task 7
-var a=[1,2,3,4,5]
-console.log(a)
-let double =a.map(a=>a*2 )
-console.log(double);
+// // task 7
+// var a=[1,2,3,4,5]
+// console.log(a)
+// let double =a.map(a=>a*2 )
+// console.log(double);
 
-// task 8
+// // task 8
 
-var a =[1,2,3,4,5];
-console.log(a);
-let filter=a.filter(a=>a%2==0)
-console.log(filter);
+// var a =[1,2,3,4,5];
+// console.log(a);
+// let filter=a.filter(a=>a%2==0)
+// console.log(filter);
 
-// task 9
+// // task 9
 
-var a=[1,2,3,4,5];
-let reduce =a.reduce(a=> a +=a)
-console.log(reduce);
+// var a=[1,2,3,4,5];
+// let reduce =a.reduce(a=> a +=a)
+// console.log(reduce);
 
-// task 10
+// // task 10
 
-var x=[1,2,3,4,5];
-for(let value of x){
-    console.log(`values are ${value}`)
-}
+// var x=[1,2,3,4,5];
+// for(let value of x){
+//     console.log(`values are ${value}`)
+// }
 
-// task 11
+// // task 11
 
-var x=[1,2,3,4,5]
- x.forEach((value ) => {
-    console.log(`x values are  ${value}`);
+// var x=[1,2,3,4,5]
+//  x.forEach((value ) => {
+//     console.log(`x values are  ${value}`);
 
-}); 
+// }); 
 
-// task 12
+// // task 12
 
-var matrix =[
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-];
-for(i=0;i<=matrix.length-1;i++){
-console.log(matrix[i]);}
+// var matrix =[
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ];
+// for(i=0;i<=matrix.length-1;i++){
+// console.log(matrix[i]);}
 
-// task 13
+// // task 13
 
-var matrix =[
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-];
-console.log(matrix[1]);
+// var matrix =[
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ];
+// console.log(matrix[1]);
 
 //                                         // day 7
 // // Activity : Object                                        
@@ -404,3 +404,94 @@ console.log(matrix[1]);
 // console.log(Object.keys(book1));
 // console.log(Object.values(book1))
 
+                                    //  Day 8
+// Activity   template literals                                    
+// task 1
+
+let arr={
+    name:"veer",
+    age:15
+}
+console.log(`${arr.name} is ${arr.age} year old`);
+
+// task 2
+
+let multi =`name
+age
+year`
+console.log(multi);
+
+// task 3
+
+var apple=[
+    "hello",
+    "hard",
+    "hear",
+    "half",
+    "full"
+]
+const [a,b,c,]= apple;
+console.log(a);
+console.log(b);
+
+// task 4
+
+var bookData ={
+    title:"ddsa",
+    author:"me",
+    year:2015
+}
+const {title,author}=bookData;
+console.log(title);
+console.log(author);
+
+// task 5
+
+const person=[1,2,3,4]
+const newperson =[...person , 6,5];
+console.log(newperson)
+
+// task 6
+
+const fruits =["apple", "mango","banana","pine-apple"]
+const [first,second, ...rest]=fruits;
+console.log(first);
+console.log(second);
+console.log(rest);
+
+// task 7
+
+function para(a,b=1){
+   return a*b;
+}
+
+console.log(para(5,5))
+
+console.log(para(8))
+
+// task 8  
+// 1. property
+
+let hi="hello";
+let num=15;
+
+const per={hi,num}
+console.log(per)
+
+// 2.method
+let user1={
+    username:"kumar",
+    greet : function(){
+        console.log(`this ${this.username}`)
+    }
+}
+user1.greet();
+
+// task 9
+
+let key ="email";
+const boy={
+    name: "kumar",
+    [key]:"hello@gmail.com"
+}
+console.log(boy)
