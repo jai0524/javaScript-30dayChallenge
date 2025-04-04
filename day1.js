@@ -39,7 +39,14 @@ value = 4;
 console.log(value);
 
 // tast 6
+
 // const x=5;
 // console.log(x);
 //  x=4;
 // console.log(x);
+
+// const x=5;
+// console.log(x);
+//  x=4;
+// console.log(x);
+ 
