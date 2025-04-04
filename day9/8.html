@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> .addRM{
+font-size: 50px;
+background: red;
+    }
+</style>
+   
+</head>
+<body>
+    <p id="color" >ADD and RENOVE</p>
+    <button onclick="addClass()">Add</button>
+    <button onclick="removecss()">remove</button>
+
+
+
+    <script>
+        function addClass(){
+            document.getElementById("color").classList.add("addRM");
+        }
+        function removecss(){
+            document.getElementById("color").classList.remove("addRM")
+        }
+    </script>
+</body>
+</html>
