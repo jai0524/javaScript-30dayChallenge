@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ulList">
+        <li>car</li>
+        <li>pet</li>
+        <li>waight</li>
+        <li>try</li>
+        <li>mate</li>
+        <li>mine</li>
+    </ul>
+    <script>
+         document.getElementById("ulList").addEventListener("click",function(event){
+        
+            if(event.target.tagName=="LI"){
+                alert("you clicked on : "  + event.target.textContent);
+                event.target.style.color="red"
+            }
+        })
+    </script>
+</body>
+</html>

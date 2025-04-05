@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="subform" action="form">
+        name:<input type="text" minlength="3" maxlength="15">
+        <br><br><br>
+        <input type="submit"value="Submit">
+
+    </form>
+    <p id="message"></p>
+    <script>
+        let message = document.getElementById("message")
+        let subform = document.getElementById("subform");
+        subform.addEventListener("submit",function(event){
+            event.preventDefault();
+            message.textContent=`submit data `
+            console.log("form submited")
+
+        })
+    </script>
+</body>
+</html>
