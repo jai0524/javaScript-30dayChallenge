@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mouseCss{
+            border: 2px solid blue;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <p id="mouseCss">border color change</p>
+    <script>
+        let bcl = document.getElementById("mouseCss")
+        bcl.addEventListener("mouseover",function(){
+bcl.style.borderColor="red";
+        });
+        bcl.addEventListener("mouseout",function(){
+            bcl.style.borderColor="blue"
+        })
+    </script>
+</body>
+</html>

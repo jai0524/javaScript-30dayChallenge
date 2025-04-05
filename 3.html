@@ -1,0 +1,25 @@
+<!-- ex neya div element banao jisme kuch text content ho aur usse body papi append karo -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div id="container">
+       <p id="pera">hello World!</p>
+       <button onclick="peraChange()">Click me</button>
+       </div>
+       <script>
+           function peraChange(){
+let center = document.getElementById("container");
+           let newpera = document.getElementById('pera');
+           newpera.textContent="first programme";
+           center.append(newpera);
+           }
+       </script>
+  
+</body>
+</html>
