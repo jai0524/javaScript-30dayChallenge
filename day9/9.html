@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="peraChange">This is first line of code</p>
+    <button id="mybutton">my button</button>
+
+    <script>
+        document.getElementById("mybutton").addEventListener("click",function(){
+            document.getElementById("peraChange").textContent="new line";
+        });
+    </script>
+</body>
+</html>
