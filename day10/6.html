@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="upOutput">press any key</p>
+    <script>
+        let upOutput = document.getElementById("upOutput");
+        document.addEventListener("keyup",function(event){
+            upOutput.textContent=`key up ${event.key}`
+            console.log("key up:",event.key)
+        })
+    </script>
+</body>
+</html>

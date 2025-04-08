@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="bgc">BackGroundColor change</p>
+
+    <script>
+        let bg= document.getElementById("bgc");
+        //mouseover method
+        bg.addEventListener("mouseover",function(){
+            bg.style.backgroundColor="black";
+            bg.style.color="white"
+        })
+
+        //mouseout method
+        bg.addEventListener("mouseout",function(){
+            bg.style.color="black";
+            bg.style.backgroundColor="white"
+        })
+
+    </script>
+</body>
+</html>

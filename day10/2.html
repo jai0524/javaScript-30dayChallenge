@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #toggleImg{
+            width: 500px;
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
+    <img src="https://th.bing.com/th/id/OIP.2HIX184r17IvA1VRuXdtbAHaFL?rs=1&pid=ImgDetMain" alt="" id="toggleImg">
     
+
+
+    <script>
+        let hello = document.getElementById("toggleImg")
+        const img1="https://th.bing.com/th/id/OIP.2HIX184r17IvA1VRuXdtbAHaFL?rs=1&pid=ImgDetMain"
+        const img2 ="https://img.vn/uploads/version/img24-png-20190726133727cbvncjKzsQ.png"
+        hello.addEventListener("dblclick",
+        function toggleimage(){
+            hello.src = (hello.src==img1)?img2:img1;
+        });
+        
+    </script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="car">chosse a car</label>
+    <select  id="car">
+        <option value="bmw">bmw</option>
+        <option value="auddi">auddi</option>
+        <option value="tata">tata</option>
+        <option value="nexo">nexo</option>
+        <option value="hunda">hunda</option>
+    </select>
+<p id="cars">choosen car appear hear</p>
+    <script>
+        let dropdown = document.getElementById("car");
+        let result = document.getElementById("cars");
+
+        dropdown.addEventListener("change",function(){
+            result.textContent=`you selected: ${dropdown.value}`
+            console.log("cars appear:", dropdown.value)
+        })
+    </script>
+</body>
+</html>
