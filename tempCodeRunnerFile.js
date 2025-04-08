@@ -1,12 +1,12 @@
-y={
-//     book:[
-//            { title:"CA",author:"Armstrong-Subero",year:2020},
-//            { title:"CN",author:"hello",year:2010},
-//             {title:"DS",author:"hi",year:2022},
-//             {title:"JAVA",author:"by",year:2003}
+// function waitAndResolve(){
+        //     return new Promise((resolve)=>{
+        //         setTimeout(()=>{
+        //         resolve("message will resolved in 2 second")
+        //     },2000);
+        //     });
+        //     }
         
+        //     waitAndResolve().then((message) => {
+        //     console.log(message);
+        //     });
     
-// ]}
-// for(let book of library.book){
-//     console.log(book.title)
-// }
