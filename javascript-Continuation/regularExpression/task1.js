@@ -68,12 +68,19 @@
 // }
 
 // task 9
-var password = "Password@1234";
-var regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@$%7!#^*&])[A-Za-z\d@$!%*?&]{8,}$/;
+// var password = "Password@1234";
+// var regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@$%7!#^*&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-if (regex.test(password)){
-    console.log("valid password", password);
-}
-else{
-    console.log("invalid password");
+// if (regex.test(password)){
+//     console.log("valid password", password);
+// }
+// else{
+//     console.log("invalid password");
+// }
+
+// task 10
+var website = "https://www.example.com";
+const Regex = /^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})(\/[^\s]*)?$/;
+if(Regex.test(website)){
+    console.log("valid url", website)
 }
